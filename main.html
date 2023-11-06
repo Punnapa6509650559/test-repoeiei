@@ -1,0 +1,278 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>เพิ่ม-ถอนรายวิชา</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+
+<body>
+    <br>
+    <img src="scitulogo.png" width="400" height="100">
+    <br>
+    <div class="top">
+        <h1>คำร้องเพิ่ม-ถอน รายวิชา</h1>
+        <h2>คณะวิทยาศาสตร์และเทคโนโลยี มหาวิทยาลัยธรรมศาสตร์</h2>
+    </div>
+
+
+    <br>
+    <div class="info">
+        <label for="date">วันที่ (dd/mm/yyyy)</label>
+        <input id="date" name="date" type="date" required>
+        <br>
+        <label for="topic">เรื่อง</label>
+        <input id="topic" name="topic" type="text" required>
+        <br>
+        <label>เรียน </label>
+        <p1>คณบดีคณะวิทยาศาสตร์และเทคโนโลยี </p1>
+        <br>
+        <label>สิ่งที่ส่งมาด้วย </label>
+        <p1>ผลการจดทะเบียนทุกภาคเรียนจากเว็ปไซต์สำนักทะเบียนฯ</p1>
+        <br>
+
+        <p1>ข้าพเจ้า</p1>
+        <select id="gender" name="gender">
+            <option value="plsselcetก">เลือก</option>
+            <option value="mr">นาย</option>
+            <option value="ms">นางสาว</option>
+            <option value="mrs">นาง</option>
+
+
+        </select>
+        <input id="firstname" name="firstname" type="text" placeholder="ชื่อ" required>
+        <input id="lastname" name="lastname" type="text" placeholder="สกุล" required>
+        <br>
+        <p1>เลขทะเบียน</p1>
+        <input id="stuid" name="stuid" type="text" required>
+        <br>
+        <p1>ชั้นปีที่</p1>
+        <input id="year" name="year">
+        <br>
+        <p1>สาขาวิชา</p1>
+        <select id="major" name="major">
+            <option value="plsselcetm">เลือก</option>
+            <option value="math">สาขาวิชาคณิตศาสตร์</option>
+            <option value="mathfinance">สาขาวิชาคณิตศาสตร์ (คณิตศาสตร์การเงิน)</option>
+            <option value="appmath">สาขาวิชาคณิตศาสตร์ประยุกต์</option>
+            <option value="chem">สาขาวิชาเคมี</option>
+            <option value="at">สาขาวิชาเทคโนโลยีการเกษตร</option>
+            <option value="biot">สาขาวิชาเทคโนโลยีชีวภาพ</option>
+            <option value="biochem">สาขาวิชาเทคโนโลยีพลังงานชีวภาพและการแปรรูปเคมีชีวภาพ</option>
+            <option value="rt">สาขาวิชาเทคโนโลยีเพื่อการพัฒนายั่งยืน</option>
+            <option value="pc">สาขาวิชาฟิสิกส์</option>
+            <option value="pce">สาขาวิชาฟิสิกส์อิเล็กทรอนิกส์</option>
+            <option value="ms">สาขาวิชาวัสดุศาสตร์</option>
+            <option value="csr">สาขาวิชาวิทยาการคอมพิวเตอร์ (คอมพิวเตอร์และวิทยาการสารสนเทศ)</option>
+            <option value="cspe">สาขาวิชาวิทยาการคอมพิวเตอร์ (คอมพิวเตอร์ประยุกต์)</option>
+            <option value="cslp">สาขาวิชาวิทยาการคอมพิวเตอร์ (เทคโนโลยีการเรียนรู้)</option>
+            <option value="asc">สาขาวิชาวิทยาการประกันภัย</option>
+            <option value="food">สาขาวิชาวิทยาศาสตร์และเทคโนโลยีการอาหาร</option>
+            <option value="texttile">สาขาวิชาวิทยาศาสตร์และเทคโนโลยีสิ่งทอ</option>
+            <option value="fin">สาขาวิชาวิทยาศาสตร์และนวัตกรรมทางอาหาร</option>
+            <option value="envi">สาขาวิชาวิทยาศาสตร์สิ่งแวดล้อม</option>
+            <option value="stat">สาขาวิชาสถิติ</option>
+            <option value="appstat">สาขาวิชาสถิติ (สถิติประยุกต์)</option>
+
+        </select>
+        <br>
+        <p1>ที่อยู่ที่สามารถติดต่อได้ทางไปรษณีย์ </p1>
+        <p1>บ้านเลขที่</p1>
+        <input id="address" name="address" type="text" required>
+        <br>
+        <p1>หมู่ที่ </p1>
+        <input id="moo" name="moo" type="text" required>
+        <p1>ตำบล </p1>
+        <input id="subdis" name="subdis" type="text" required>
+        <p1> อำเภอ</p1>
+        <input id="dis" name="dis" type="text" required>
+        <br>
+        <p1>จังหวัด </p1>
+        <input id="province" name="province" type="text" required>
+        <p1> รหัสไปรษณีย์</p1>
+        <input id="zipcode" name="zipcode" type="text" placeholder="กรอกตัวเลข 5 หลัก" required>
+        <br>
+        <p1> โทรศัพท์มือถือ </p1>
+        <input id="mobilephone" name="mobilephone" type="text" placeholder="กรอกตัวเลข 10 หลัก " required>
+        <p1> โทรศัพท์บ้าน (ถ้ามี) </p1>
+        <input id="telophone" name="telophone" type="text" placeholder="กรอกตัวเลข 10 หลัก">
+        <br>
+        <p1> อาจารย์ที่ปรึกษา</p1>
+        <input id="teacher" name="teacher" type="text" required>
+
+
+    </div>
+
+    <br>
+
+
+    <div class="adddrop">
+        <label> มีความประสงค์ขอ</label>
+        <select id="addordrop" name="addordrop">
+            <option value="needto">เลือก</option>
+            <option value="add">เพิ่มรายวิชา</option>
+            <option value="withdraw">ถอนวิชา</option>
+
+        </select>
+        <p1>ดังรายการต่อไปนี้</p1>
+        <br>
+        <br>
+
+        <table>
+            <tr>
+                <th>ลำดับ </th>
+                <th>รหัสวิชา</th>
+                <th>ชื่อวิชา</th>
+                <th>section</th>
+                <th>วัน/เวลา</th>
+                <th>หน่วยกิต</th>
+                <th>ชื่อผู้สอน</th>
+                <th>ผู้สอนอนุญาต</th>
+            </tr>
+
+            <tr>
+                <td>1.</td>
+                <td><input id="subid1" name="subid1" type="text"></td>
+                <td><input id="subname1" name="subname1"></td>
+                <td><input id="sec1" name="sec1"></td>
+                <td><input id="datetime1" name="datetime1"></td>
+                <td><input id="wight1" name="wight1" type="number"></td>
+                <td><input id="tname1" name="tname1"></td>
+                <td><input id="accept1" name="accept1" type="checkbox"> </td>
+            </tr>
+
+
+            <tr>
+                <td>2.</td>
+                <td><input id="subid2" name="subid2" type="text"></td>
+                <td><input id="subname2" name="subname2"></td>
+                <td><input id="sec2" name="sec2"></td>
+                <td><input id="datetime2" name="datetime2"></td>
+                <td><input id="wight2" name="wight2" type="number"></td>
+                <td><input id="tname2" name="tname2"></td>
+                <td><input id="accept2" name="accept2" type="checkbox"> </td>
+            </tr>
+
+
+            <tr>
+                <td>3.</td>
+                <td><input id="subid3" name="subid3" type="text"></td>
+                <td><input id="subname3" name="subname3"></td>
+                <td><input id="sec3" name="sec3"></td>
+                <td><input id="datetime3" name="datetime3"></td>
+                <td><input id="wight3" name="wight3" type="number"></td>
+                <td><input id="tname3" name="tname3"></td>
+                <td><input id="accept3" name="accept3" type="checkbox"> </td>
+            </tr>
+
+
+
+            <tr>
+                <td>4.</td>
+                <td><input id="subid4" name="subid4" type="text"></td>
+                <td><input id="subname4" name="subname4"></td>
+                <td><input id="sec4" name="sec4"></td>
+                <td><input id="datetime4" name="datetime4"></td>
+                <td><input id="wight4" name="wight4" type="number"></td>
+                <td><input id="tname4" name="tname4"></td>
+                <td><input id="accept4" name="accept4" type="checkbox"> </td>
+            </tr>
+
+            <tr>
+                <td>5.</td>
+                <td><input id="subid5" name="subid5" type="text"></td>
+                <td><input id="subname5" name="subname5" type="text"></td>
+                <td><input id="sec5" name="sec5" type="text"></td>
+                <td><input id="datetime5" name="datetime5" type="text"></td>
+                <td><input id="weight5" name="weight5" type="number"></td>
+                <td><input id="tname5" name="tname5" type="text"></td>
+                <td><input id="accept5" name="accept5" type="checkbox"></td>
+            </tr>
+
+            <tr>
+                <td>6.</td>
+                <td><input id="subid6" name="subid6" type="text"></td>
+                <td><input id="subname6" name="subname6" type="text"></td>
+                <td><input id="sec6" name="sec6" type="text"></td>
+                <td><input id="datetime6" name="datetime6" type="text"></td>
+                <td><input id="weight6" name="weight6" type="number"></td>
+                <td><input id="tname6" name="tname6" type="text"></td>
+                <td><input id="accept6" name="accept6" type="checkbox"></td>
+            </tr>
+
+            <tr>
+                <td>7.</td>
+                <td><input id="subid7" name="subid7" type="text"></td>
+                <td><input id="subname7" name="subname7" type="text"></td>
+                <td><input id="sec7" name="sec7" type="text"></td>
+                <td><input id="datetime7" name="datetime7" type="text"></td>
+                <td><input id="weight7" name="weight7" type="number"></td>
+                <td><input id="tname7" name="tname7" type="text"></td>
+                <td><input id="accept7" name="accept7" type="checkbox"></td>
+            </tr>
+
+            <tr>
+                <td>8.</td>
+                <td><input id="subid8" name="subid8" type="text"></td>
+                <td><input id="subname8" name="subname8" type="text"></td>
+                <td><input id="sec8" name="sec8" type="text"></td>
+                <td><input id="datetime8" name="datetime8" type="text"></td>
+                <td><input id="weight8" name="weight8" type="number"></td>
+                <td><input id="tname8" name="tname8" type="text"></td>
+                <td><input id="accept8" name="accept8" type="checkbox"></td>
+            </tr>
+
+            <tr>
+                <td>9.</td>
+                <td><input id="subid9" name="subid9" type="text"></td>
+                <td><input id="subname9" name="subname9" type="text"></td>
+                <td><input id="sec9" name="sec9" type="text"></td>
+                <td><input id="datetime9" name="datetime9" type="text"></td>
+                <td><input id="weight9" name="weight9" type="number"></td>
+                <td><input id="tname9" name="tname9" type="text"></td>
+                <td><input id="accept9" name="accept9" type="checkbox"></td>
+            </tr>
+
+            <tr>
+                <td>10.</td>
+                <td><input id="subid10" name="subid10" type="text"></td>
+                <td><input id="subname10" name="subname10" type="text"></td>
+                <td><input id="sec10" name="sec10" type="text"></td>
+                <td><input id="datetime10" name="datetime10" type="text"></td>
+                <td><input id="weight10" name="weight10" type="number"></td>
+                <td><input id="tname10" name="tname10" type="text"></td>
+                <td><input id="accept10" name="accept10" type="checkbox"></td>
+            </tr>
+
+
+        </table>
+
+
+        <br>
+
+        <label>สาเหตุที่ขอ</label>
+        <select id="adddroprea" name="adddroprea">
+            <option value="selectad">เลือก</option>
+            <option value="addor">เพิ่มรายวิชา</option>
+            <option value="dropor">ถอนรายวิชา</option>
+        </select>
+        <br>
+        <br>
+        <label>เพราะ </label>
+        <input id="special-input" name="reasontext" type="text">
+    </div>
+    <br>
+    <div class="submited">
+
+
+        <input type="submit" value="SUBMIT">
+
+
+    </div>
+
+
+
+</body>
+
+
+</html>

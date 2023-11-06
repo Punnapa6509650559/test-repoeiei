@@ -1,0 +1,99 @@
+.scrollable-box {
+    height: calc(100vh - 200px);
+
+    overflow-y: auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    align-items: center;
+    color: #333;
+    font-family: 'Sarabun-Regular', sans-serif;
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgba(167, 167, 167, 0.635), rgba(255, 255, 255, 0.5)), url('TUBG2.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+.top {
+    margin: 0;
+    margin-bottom: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    line-height: 1;
+    margin-bottom: 20px;
+
+    width: 50%;
+
+}
+
+.info {
+    font-family: 'Sarabun-Regular', sans-serif;
+    padding: 10px 20px;
+    background-color: #f2f2f2;
+    color: #333;
+    margin: 1.5;
+    margin-bottom: 0;
+    line-height: 2.5;
+    text-align: left;
+    width: 50%;
+
+}
+
+.adddrop {
+    font-family: 'Sarabun-Regular', sans-serif;
+    padding: 10px 20px;
+    background-color: #ebebeb;
+    color: #333;
+    margin: 1.5;
+    margin-bottom: 0;
+    line-height: 2;
+    text-align: left;
+    width: auto;
+
+
+}
+
+table,
+th,
+td {
+    position: center;
+    font-size: 14px;
+    padding: 7px;
+    border: 1px solid black;
+    border-collapse: collapse;
+
+}
+
+
+select {
+    font-size: 14px;
+    padding: 5px;
+
+
+}
+
+input {
+    font-family: 'Sarabun-Regular', sans-serif;
+    font-size: 14px;
+    padding: 5px;
+    width: auto;
+
+}
+
+#special-input {
+    width: 500px;
+}
